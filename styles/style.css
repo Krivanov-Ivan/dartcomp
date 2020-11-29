@@ -59,7 +59,9 @@ a {text-decoration: none;}
     font-weight: 900;
 }
 
-nav {width: 40%}
+nav {
+    width: 40%;
+}
 
 .links-container {
     display: flex;
@@ -652,6 +654,8 @@ label {font-weight: 700;}
         background-color: rgb(255, 255, 255);
         transition: transform 0.2s ease-in;
     }
+
+    .footer>.container>nav>.links-container {display: none;}
 
     .links-container-active {transform: translateX(0%);}
     .sing-up {display: none;}
