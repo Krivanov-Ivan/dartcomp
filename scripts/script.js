@@ -2,6 +2,7 @@ const navSlide = () => {
     const burger = document.querySelector('.burger');
     const nav = document.querySelector('.links-container');
     const services = document.querySelectorAll('.service');
+    const menuItem = document.querySelectorAll('.menu-item');
     const active = document.querySelectorAll('.service-active');
     const svgIcon = document.querySelectorAll('svg');
     const image = document.querySelector('.image');
@@ -24,6 +25,9 @@ const navSlide = () => {
     burger.addEventListener('click', () => {
       nav.classList.toggle('links-container-active');
       burger.classList.toggle('burger-active');
+      menuItem.forEach((item) => {
+        item.classList.toggle('menu-item-active');
+      });
     });
     //Toggle sevices
     services.forEach((service, i) => {

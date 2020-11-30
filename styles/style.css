@@ -608,6 +608,18 @@ label {font-weight: 700;}
     padding-right: 1.5em;
 }
 
+
+@keyframes widthchanging {
+    from {
+        width: 0;
+    }
+    to {
+        width: 30vw;
+    }
+}
+
+
+
 @media screen and (max-width: 1400px) {
     .title-list, .reviews-container {flex-direction: column; text-align: center; align-items: center; margin-top: 10vh;}
     .text {width: 70%}
@@ -647,17 +659,19 @@ label {font-weight: 700;}
         justify-content: space-around;
         align-items: center;
         top: 0;
-        width: 30vw;
+        width: 0;
         height: 100vh;
         margin: 0;
         padding: 0;
         background-color: rgb(255, 255, 255);
-        transition: transform 0.2s ease-in;
+        transition: width 0.2s ease-in;
     }
 
     .footer>.container>nav>.links-container {display: none;}
-
-    .links-container-active {transform: translateX(0%);}
+    nav {width: 0;}
+    .menu-item {display: none;}
+    .menu-item-active {display: block;}
+    .links-container-active {transform: translateX(0%); width: 30vw;}
     .sing-up {display: none;}
     .menu-link {color: #000; text-transform: uppercase;}
     .login {display: block;}
