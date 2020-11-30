@@ -711,7 +711,7 @@ label {font-weight: 700;}
     .try {margin: auto;}
     .text {flex-direction: column; display: flex;}
     iframe {display: none;}
-    .links-container {width: 50vw;}
+    .links-container-active {width: 50vw;}
     .container {width: 99vw;}
     .section-desc, .title, h3 {width: 90vw}
     .slider {display: none}
